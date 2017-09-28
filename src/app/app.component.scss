@@ -1,0 +1,32 @@
+.app-root {
+    .input-wrap {
+        input, button {
+            border-radius: 4px;
+            line-height: 24px;
+            -webkit-appearance: none;
+            outline: none;
+            border: 1px #ccc solid;
+            color: #333;
+        }
+        input.time {
+            width: 40px;
+            height: 24px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 20px;
+        }
+        .btn {
+            background: #fff;
+            margin: 0;
+            padding: 0 5px;
+            height: 28px;
+            margin-left: 10px;
+            &:disabled {
+                color: #ccc
+            }
+        }
+    }
+    .countdown {
+        margin: 20px auto;
+    }
+}

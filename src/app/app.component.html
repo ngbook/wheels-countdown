@@ -1,0 +1,23 @@
+<div class="app-root">
+    <div class="input-wrap">
+        <input type="text" class="time hour" [(ngModel)]="_hours"/> : 
+        <input type="text" class="time minute" [(ngModel)]="_minutes"/> : 
+        <input type="text" class="time second" [(ngModel)]="_seconds"/>
+        <button (click)="updateCountdown()" class="btn">
+            重新倒计时
+        </button>
+        <button [disabled]="!startAvailable"
+            (click)="countdown()" class="btn">
+            开始倒计时
+        </button>
+    </div>
+    <div class="countdown" style="line-height:144px; font-size:100px;">
+        <jui-wheels [data]="hours" height="144"
+            width="100" fontSize="100" color="#d0c300"
+            itemBg="url(/assets/imgs/wheel-bg.jpg)"></jui-wheels>:<jui-wheels [data]="minutes" height="144"
+            width="100" fontSize="100" color="#d0c300"
+            itemBg="url(/assets/imgs/wheel-bg.jpg)"></jui-wheels>:<jui-wheels [data]="seconds" height="144"
+            width="100" fontSize="100" color="#d0c300"
+            itemBg="url(/assets/imgs/wheel-bg.jpg)"></jui-wheels>
+    </div>
+</div>

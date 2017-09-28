@@ -1,0 +1,25 @@
+jui-wheel {
+    display: inline-block;
+    .jui-wheel {
+        // height: 50px;
+        vertical-align: text-bottom;
+        display: inline-block;
+        overflow: hidden;
+        .wheel {
+            margin: 0;
+            // width: 24px;
+            float: left;
+            transition: margin .6s;
+            text-align: center;
+            background-attachment: fixed;
+            .box {
+                display: block;
+                // width: 24px;
+                height: 65px;
+                line-height: 65px;
+                font-size: 20px;
+                font-weight: normal;
+            }
+        }
+    }
+}
