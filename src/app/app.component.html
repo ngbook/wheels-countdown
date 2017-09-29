@@ -4,7 +4,7 @@
         <input type="text" class="time minute" [(ngModel)]="_minutes"/> : 
         <input type="text" class="time second" [(ngModel)]="_seconds"/>
         <button (click)="updateCountdown()" class="btn">
-            重新倒计时
+            设置时间
         </button>
         <button [disabled]="!startAvailable"
             (click)="countdown()" class="btn">
@@ -12,12 +12,12 @@
         </button>
     </div>
     <div class="countdown" style="line-height:144px; font-size:100px;">
-        <jui-wheels [data]="hours" height="144"
+        <wheels [data]="hours" height="144"
             width="100" fontSize="100" color="#d0c300"
-            itemBg="url(http://ou2gp2r4n.bkt.clouddn.com/ngbook/wheels/wheel-bg.jpg)"></jui-wheels>:<jui-wheels [data]="minutes" height="144"
+            itemBg="url(http://ou2gp2r4n.bkt.clouddn.com/ngbook/wheels/wheel-bg.jpg)"></wheels>:<wheels [data]="minutes" height="144"
             width="100" fontSize="100" color="#d0c300"
-            itemBg="url(http://ou2gp2r4n.bkt.clouddn.com/ngbook/wheels/wheel-bg.jpg)"></jui-wheels>:<jui-wheels [data]="seconds" height="144"
+            itemBg="url(http://ou2gp2r4n.bkt.clouddn.com/ngbook/wheels/wheel-bg.jpg)"></wheels>:<wheels [data]="seconds" height="144"
             width="100" fontSize="100" color="#d0c300"
-            itemBg="url(http://ou2gp2r4n.bkt.clouddn.com/ngbook/wheels/wheel-bg.jpg)"></jui-wheels>
+            itemBg="url(http://ou2gp2r4n.bkt.clouddn.com/ngbook/wheels/wheel-bg.jpg)"></wheels>
     </div>
 </div>

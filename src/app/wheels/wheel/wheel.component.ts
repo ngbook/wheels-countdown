@@ -4,10 +4,10 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'jui-wheel',
+  selector: 'wheel',
   templateUrl: './wheel.component.html',
-  styleUrls: ['./wheel.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./wheel.component.scss']
+//   encapsulation: ViewEncapsulation.None
 })
 export class WheelComponent implements OnInit {
     @Input()
