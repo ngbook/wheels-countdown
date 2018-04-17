@@ -10,25 +10,20 @@ import {
 //   encapsulation: ViewEncapsulation.None
 })
 export class WheelsComponent implements OnInit {
+
     @Input()
     set data(dd: string) {
-        // console.log(d);
         if (!dd || dd === this._data) {
             return;
         }
         this._data = dd;
-        // const nums = [];
-        // this.nums.splice(0, this.nums.length);
         const count = dd.length;
+        const nums = [];
         for (let i = 0; i < count; i ++) {
             const d = dd[i];
-            if (this.nums[i]) {
-                this.nums[i] = d;
-            } else {
-                this.nums.push(d);
-            }
+            nums.push(d);
         }
-        // console.log(this.nums);
+        this.nums = nums;
     }
 
     @Input()

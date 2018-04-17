@@ -17,14 +17,13 @@ export class WheelComponent implements OnInit {
         if (pos === this._num) {
             return;
         }
-        // console.log(pos, this._num);
         if (pos >= 0) {
             if (pos > 10) {
                 pos %= 10;
             }
             setTimeout(() => {
-                this.top = this.height * pos;
-                this._num = pos;
+                this._num = +pos;
+                this.top = this.height * this._num;
             }, this.delay);
         }
     }
